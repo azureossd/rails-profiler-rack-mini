@@ -1,5 +1,4 @@
 # FileStore is by default and will write to tmp/miniprofiler/*
-Rack::MiniProfiler.config.storage = Rack::MiniProfiler::FileStore 
 
 # set MemoryStore
 #Rack::MiniProfiler.config.storage = Rack::MiniProfiler::MemoryStore
