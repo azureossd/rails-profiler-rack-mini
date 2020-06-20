@@ -6,6 +6,7 @@ ruby '2.6.2'
 gem 'rack-mini-profiler'
 gem 'flamegraph'
 gem 'stackprof'
+gem 'memory_profiler'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
