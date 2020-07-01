@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In order to run this application in Azure Web App Linux you need the following steps:
 
-Things you may want to cover:
+* Select Ruby 2.6 
+* Add this app setting ASSETS_PRECOMPILE=true
 
-* Ruby version
+## Troubleshooting
+If profiler is not being loaded, review the following:
 
-* System dependencies
+* SSH into the container using `https://<sitename>.scm.azurewebsites.net/webssh/host` and cd into /home/site/wwwroot/log, cat production.log to check for any exception.
+* Request a couple of times to load the speed badge in home page.
+* Cd into /home/site/wwwroot/tmp and delete miniprofiler folder with rm -rf miniprofiler/, then stop and start the site from the azure portal.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
