@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
 
-gem 'rack-mini-profiler', '~> 2.3', '>= 2.3.2'
+ gem 'rack-mini-profiler', '~> 2.0'
 gem 'flamegraph', '~> 0.9.5'
 gem 'stackprof', '~> 0.2.17'
 gem 'memory_profiler', '~> 1.0'
