@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
 
-gem 'rack-mini-profiler'
-gem 'flamegraph'
-gem 'stackprof'
-gem 'memory_profiler'
+gem 'rack-mini-profiler', '~> 2.3', '>= 2.3.2'
+gem 'flamegraph', '~> 0.9.5'
+gem 'stackprof', '~> 0.2.17'
+gem 'memory_profiler', '~> 1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
