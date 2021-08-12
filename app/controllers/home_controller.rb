@@ -37,7 +37,7 @@ class HomeController < ApplicationController
     start_time = Time.now
 
     custom_method_memory()
-    p fibonacci(41)
+    p fibonacci(30)
 
     end_time = Time.now 
     
