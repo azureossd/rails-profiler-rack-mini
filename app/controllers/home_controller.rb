@@ -35,10 +35,10 @@ class HomeController < ApplicationController
 
   def index
     start_time = Time.now
-
+    
+    p fibonacci(40)
     custom_method_memory()
-    p fibonacci(30)
-
+    
     end_time = Time.now 
     
     elapsed_seconds = end_time.to_f - start_time.to_f
