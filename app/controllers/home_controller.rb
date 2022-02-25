@@ -36,7 +36,7 @@ class HomeController < ApplicationController
   def index
     start_time = Time.now
     
-    p fibonacci(40)
+    p fibonacci(35)
     custom_method_memory()
     
     end_time = Time.now 
