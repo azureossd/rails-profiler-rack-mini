@@ -2,8 +2,11 @@
 
 In order to run this application in Azure Web App Linux you need the following steps:
 
-* Select Ruby 2.6 
-* Add this app setting ASSETS_PRECOMPILE=true
+1. Create a Ruby 2.7.3 web app
+2. Add this app setting **`ASSETS_PRECOMPILE=true`**
+3. Fork this repository to your account and then set up deployment center with the forked repository.
+
+To run this app locally, make sure you have 2.7.3 installed and then run `bundle install` to install gems, finally use `rails server -b 0.0.0.0` to run the app.
 
 ## Troubleshooting
 If profiler is not being loaded, review the following:
